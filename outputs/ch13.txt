@@ -1,0 +1,48 @@
+=== block 1 ===
+Chapter 7: w [0.4 0.5]  b -2.900
+s   1  w [0.181 0.181]  b -0.627  y'a -0.62651  epochs 147
+s   3  w [0.318 0.318]  b -1.864  y'a -0.20707  epochs 156
+s  10  w [0.4  0.42]  b -2.661  y'a -0.02661  epochs 270
+s  30  w [0.4  0.49]  b -2.871  y'a -0.00319  epochs 1551
+s 100  w [0.4   0.499]  b -2.897  y'a -0.00029  epochs 16311
+s 300  w [0.4 0.5]  b -2.900  y'a -0.00003  epochs 143684
+=== block 2 ===
+eight: w [0.211 0.211] b -0.898 epochs 166 gap 1e-10
+  LinearSVC w [0.211 0.211] b -0.898 dJ -9e-12
+nine: w [0.181 0.181] b -0.627 epochs 205 gap 2e-10
+  LinearSVC w [0.181 0.181] b -0.627 dJ -6e-11
+=== block 3 ===
+T     100  w [-0.09   0.225 -0.54 ]  dJ 0.99058  ball 0.59065
+T    1000  w [ 0.194  0.09  -0.657]  dJ 0.22152  ball 0.10007
+T   10000  w [ 0.201  0.188 -0.64 ]  dJ 0.04053  ball 0.04037
+T  100000  w [ 0.181  0.179 -0.618]  dJ 0.00073  ball 0.00072
+T 1000000  w [ 0.18   0.18  -0.624]  dJ 0.00028  ball 0.00028
+=== block 4 ===
+C   0.5 T   10000 J*      3.1  plain        3.2  ball        3.2
+C   0.5 T 1000000 J*      3.1  plain        3.1  ball        3.1
+C   100 T   10000 J*    367.6  plain      900.8  ball      896.0
+C   100 T 1000000 J*    367.6  plain      376.5  ball      376.2
+C 10000 T   10000 J*  39900.2  plain  2490820.5  ball  2674725.1
+C 10000 T 1000000 J*  39900.2  plain    42516.4  ball    43297.3
+=== block 5 ===
+shuffle True   epochs 50  steps 45484
+shuffle False  epochs 2000  steps 1336458
+=== block 6 ===
+m  2000 dcd 0.735 J     996.1 gap 0.08 ep 46 sv 1494
+        peg 0.736 J    1046.5  LinearSVC 0.735 J     996.1
+m  8000 dcd 0.764 J    3784.1 gap 0.30 ep 59 sv 5202
+        peg 0.758 J    3950.8  LinearSVC 0.764 J    3784.0
+m 32000 dcd 0.807 J   14326.6 gap 0.48 ep 81 sv 18415
+        peg 0.808 J   14878.5  LinearSVC 0.807 J   14326.6
+Gaussian m 8000: 0.755 sv 5976
+=== block 7 ===
+plain linear 0.498
+SVC Gaussian 0.996  sv 177
+Fourier D    10 K -0.035 (exact 0.104)  test 0.967
+Fourier D   100 K 0.050 (exact 0.104)  test 0.994
+Fourier D  1000 K 0.123 (exact 0.104)  test 0.995
+Fourier D 10000 K 0.107 (exact 0.104)  test 0.996
+Nystroem k   10  test 0.943
+Nystroem k   30  test 0.995
+Nystroem k  100  test 0.996
+Nystroem k  300  test 0.996

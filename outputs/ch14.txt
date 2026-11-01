@@ -1,0 +1,95 @@
+=== block 1 ===
+raw  d45   1.00  d47  4.00  K45 6.07e-01  K47 0.135
+deg  d45 100.00  d47  4.00  K45 1.93e-22  K47 0.135
+std  d45   0.33  d47  1.45  K45 8.46e-01  K47 0.483
+=== block 2 ===
+raw: sv [4 5 7]  width 0.894  line x1 + 2.000 x2 = 11.000
+deg: sv [4 5 7]  width 1.961  line x1 + 2.000 x2 = 11.000
+std: sv [4 5 7]  width 0.521  line x1 + 2.000 x2 = 11.000
+=== block 3 ===
+sd from 0.0026 to 568.9
+share of variance: ['worst area 0.717', 'mean area 0.274']
+rule: predict the larger class 0.627
+raw gamma=1       0.627
+raw gamma=scale   0.919
+std gamma=scale   0.972
+=== block 4 ===
+mean squared distance 60.1, 2n = 60
+gamma scale 0.0333
+=== block 5 ===
+StandardScaler  0.979
+MinMaxScaler    0.984
+RobustScaler    0.977
+MaxAbsScaler    0.986
+=== block 6 ===
+cancer: leak 0.9736  clean 0.9738  gap -0.0003
+tail: leak 0.809  clean 0.807  gap +0.002
+=== block 7 ===
+noise, picked before folds 0.960
+noise, picked inside folds 0.580
+=== block 8 ===
+without 4: w [0.4 0.8]  b  -3.800  yf  -0.20
+without 5: w [1. 1.]  b  -8.000  yf   0.00
+without 6: w [1. 2.]  b -11.000  yf   3.00
+without 7: w [0. 2.]  b  -7.000  yf  -1.00
+without 8: w [1. 2.]  b -11.000  yf   8.00
+LOO errors 3 of 8
+cross_val_score [1. 1. 1. 0. 1. 1. 0. 1.]
+=== block 9 ===
+folds [0.965 0.976 0.988 0.976 0.988] mean 0.979 sd 0.01
+50 shuffles: mean 0.979 sd 0.0035 range 0.967 0.986
+=== block 10 ===
+train 426 test 143
+best C 10 gamma 0.01 cv 0.984
+test 0.951
+cells within one standard error (0.005): 2 of 49
+=== block 11 ===
+104 candidates; best rbf cv 0.984
+  linear 0.974
+  poly   0.981
+  rbf    0.984
+=== block 12 ===
+linear: C 0.01 cv 0.981  test 0.979
+=== block 13 ===
+steps by C [ 1420  1819  3330 11021 81839]
+share of the largest C 0.82
+=== block 14 ===
+C   0.01  sv 8  LOO errors 5
+C   0.10  sv 8  LOO errors 2
+C   0.50  sv 6  LOO errors 3
+C   1.00  sv 6  LOO errors 3
+C  10.00  sv 5  LOO errors 3
+C 100.00  sv 5  LOO errors 3
+81 values of C, 3 stretches of equal errors
+=== block 15 ===
+ratio 3.16: cold 100 passes, warm 97 passes
+ratio 1.26: cold 398 passes, warm 319 passes
+=== block 16 ===
+noise, 40 data sets: best cell 0.573  nested 0.487
+=== block 17 ===
+outer folds [0.982 0.956 0.991 0.982 0.965]
+nested 0.975; plain best cell 0.979
+fits 1230
+=== block 18 ===
+cut  0.0  tp 3 fp 0 fn 1 tn 4  prec 1.000  rec 0.750  F1 0.857
+cut -1.0  tp 4 fp 2 fn 0 tn 2  prec 0.667  rec 1.000  F1 0.800
+AUC 0.9375
+=== block 19 ===
+always -1  acc 0.950  prec 0.000  rec 0.000  F1 0.000  AUC 0.500
+plain      acc 0.968  prec 0.887  rec 0.401  F1 0.552  AUC 0.961
+=== block 20 ===
+weight None: alpha [0.006 0.    0.004 0.01  0.01  0.01 ]
+  w [0.018 0.036]  b -1.1260  predicted +1: 0
+weight balanced: alpha [0.007 0.007 0.007 0.007 0.015 0.015]
+  w [0.052 0.068]  b -0.3338  predicted +1: 3
+=== block 21 ===
+plain      acc 0.968  prec 0.887  rec 0.401  F1 0.552  AUC 0.961
+balanced   acc 0.875  prec 0.274  rec 0.907  F1 0.421  AUC 0.961
+cut from folds -0.477
+moved cut  acc 0.968  prec 0.723  rec 0.577  F1 0.642  AUC 0.961
+balanced weights [ 0.526 10.   ]
+cos of the two directions 1.0
+=== block 22 ===
+accuracy  C 1 gamma 0.1 None  F1 0.521 AUC 0.836
+f1        C 100 gamma 1 None  F1 0.548 AUC 0.814
+roc_auc   C 0.01 gamma 0.01 balanced  F1 0.486 AUC 0.962

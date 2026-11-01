@@ -1,0 +1,34 @@
+=== block 1 ===
+n     2  d 2  features                  6
+n    10  d 3  features                286
+n   100  d 3  features            176,851
+n   256  d 4  features        186,043,585
+n   100  d 5  features         96,560,646
+n  1000  d 5  features  8,459,043,543,951
+=== block 2 ===
+map 25.0  kernel 25.0
+map 36.0  kernel 36.0
+=== block 3 ===
+distance 9.11  map 9.11
+=== block 4 ===
+alpha [3.333 2.    2.667 2.667]  b -1.0
+scores [-1. -1.  1.  1.]
+exact ['10/3', '2', '8/3', '8/3'] b -1 y f ['1', '1', '1', '1']
+w [ 0.     0.943  0.943  0.667 -2.828  0.667]  |w|^2 10.667
+sum alpha 32/3  width 0.612
+SVC alpha [3.333 2.    2.667 2.667]  b [-1.]
+=== block 5 ===
+shifted: default 0.78  coef0 = 1 1.00
+=== block 6 ===
+degree 1  separable False  right 7 of 9  support 5
+degree 2  separable False  right 8 of 9  support 7
+degree 3  separable True   right 9 of 9  support 7
+=== block 7 ===
+rings: line False  squares True
+=== block 8 ===
+xor counts [7. 4. 5. 5.]  b -1.0  mistakes 21
+scores [-2. -4.  1.  1.]
+rings mistakes 16  points used 11 of 60
+SVM support vectors 5
+=== block 9 ===
+spectrum 3

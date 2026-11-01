@@ -1,0 +1,7 @@
+# Versions used to produce every number in the book
+# (Python 3.9, macOS, CPU). Other versions usually run, but the
+# last digits of some numbers can differ.
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.6.1
+matplotlib==3.9.4

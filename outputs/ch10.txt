@@ -1,0 +1,40 @@
+=== block 1 ===
+D(1 r) = 5
+D(10 r) = 140
+D(100 r) = 10400
+=== block 2 ===
+rank 6  worst error 0.0
+=== block 3 ===
+Gram/m [0.405 0.045 0.016 0.008]
+exact  [0.405 0.045 0.016 0.008]
+trace 0.5
+terms   1  worst error 0.1882
+terms   3  worst error 0.0657
+terms  10  worst error 0.0190
+terms 100  worst error 0.0013
+=== block 4 ===
+least: product 0.198  sum 0.01  difference -78117648.102
+=== block 5 ===
+linear   least  -0.000  negative 0  passes True
+quad1    least  -0.000  negative 0  passes True
+near     least  -0.414  negative 1  passes False
+sigmoid  least  -0.031  negative 1  passes False
+=== block 6 ===
+grid failures 1476 of 1476
+kappa 1, points 1 and 2: det -0.1683
+kappa 1, points 2 and 4: det -0.0007
+kappa 0.01, points 9 and 18: det -0.1874
+=== block 7 ===
+kappa 0.1 c 0: least -0.526, right 0 of 8
+kappa 0.03 c -0.5: least -1.040, right 6 of 8
+quad1: right 8 of 8
+=== block 8 ===
+c [ 2.667 -2.     1.333]  norm^2 1.4667
+wiggle norm^2 0.329
+=== block 9 ===
+alpha y [ -5.79  -0.    -0.   -10.    10.     0.77   5.02   0.  ]
+c       [-9.66  0.53  0.26 -1.5   4.01  2.01  4.18  0.17]
+dual   [-1.    -2.238 -1.411 -0.049  0.464  1.     1.     2.737]
+primal [-1.    -2.238 -1.411 -0.049  0.464  1.     1.     2.737]
+J 23.2262 23.2262
+rank 6  difference along null 0.0

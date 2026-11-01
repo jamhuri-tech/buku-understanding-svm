@@ -1,0 +1,28 @@
+=== block 1 ===
+P diagonal: [1. 1. 0.]
+A rows 1, 5: [-3. -2. -1.] [4. 4. 1.]
+smallest eigenvalue of P: 0.0
+=== block 2 ===
+w [1. 2.]  b -11.0  width 0.894
+steps 2  success True
+slack [ 3.  7.  3.  0. -0.  2. -0.  7.]
+active machines: [4 5 7]
+=== block 3 ===
+2(p - q)/delta^2 = [1. 2.]
+=== block 4 ===
+2000 orders and starts: lines 1  largest error 0.0  steps 2 to 5
+=== block 5 ===
+no cost on b: w [0. 2.]  b -7.0  width 1.0
+cost on b   : w [-1.647  2.   ]  b -0.412  width 0.772
+=== block 6 ===
+points [4, 5]  w [0. 2.]  b -7.0  worst -2.0 at 7
+points [4, 5, 7]  w [1. 2.]  b -11.0  worst -0.0 at 4
+=== block 7 ===
+rogue: success False  status 8
+  message: Positive directional derivative for linesearch
+  worst slack of the returned point: -1.0
+=== block 8 ===
+t 0.90  feasible  sweep 0.142  solver ok
+t 0.95  feasible  sweep 0.069  solver gave up
+t 0.99  feasible  sweep 0.013  solver gave up
+t 1.00  no feasible pair

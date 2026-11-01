@@ -1,0 +1,31 @@
+=== block 1 ===
+pass 1 machine 1  w [-3. -2.]  b -1
+pass 1 machine 5  w [1. 2.]  b 0
+pass 2 machine 1  w [-2.  0.]  b -1
+pass 2 machine 5  w [2. 4.]  b 0
+raw   : w [1. 2.] b -11.0 mistakes 43 passes 18
+width : 0.894
+=== block 2 ===
+pass 1 machine 1  w [0.5 1.5]  b -1
+pass 1 machine 5  w [1. 2.]  b 0
+centred: mistakes 2 passes 2 width 0.447
+=== block 3 ===
+raw     svm  R2  75.0  gamma 0.0891  limit  9450.0
+raw     best R2  75.0  gamma 0.0891  limit  9450.0
+centred svm  R2  15.5  gamma 0.4364  limit    81.4
+centred best R2  15.5  gamma 0.4364  limit    81.4
+=== block 4 ===
+raw: mistakes 23 to 525, mean 137.9; passes up to 256
+  distinct lines 115, width 0.110 to 0.894, mean 0.442
+  reach 0.894: 2074, after centring the line: 4248, mean 0.587
+centred: mistakes 1 to 5, mean 3.1; passes up to 4
+  distinct lines 6, width 0.243 to 0.686, mean 0.443
+  reach 0.894: 0, after centring the line: 5040, mean 0.667
+=== block 5 ===
+random starts: width 0.000 to 0.860, mean 0.317, reach 0.894: 0
+=== block 6 ===
+rogue : no clean pass in 2000
+  mistakes 6016  largest |w| 15.81  weights seen 293
+=== block 7 ===
+counts: [16  2  7  2 15  0  1  0]
+sum a y x = [1. 2.]  sum a y = -11.0

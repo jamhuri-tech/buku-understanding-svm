@@ -1,0 +1,43 @@
+=== block 1 ===
+rank of Q: 2  of 8
+least eigenvalue: 0.0
+=== block 2 ===
+ray: balance 0.0  Qray 0.0  sum 2.0
+  t =   1  dual value 2.0
+  t =  10  dual value 20.0
+  t = 100  dual value 200.0
+solver: status 0  sum alpha 2.9e+18
+=== block 3 ===
+alpha 4, 5, 7 and b: ['5/2', '2', '1/2', '-11']
+alpha [0.  0.  0.  2.5 2.  0.  0.5 0. ]  dual value 2.5
+w [1. 2.]  b -11.0  support [4 5 7]
+sum alpha 5.0  |w|^2 5.0
+=== block 4 ===
+smallest sum [0.25  0.125 0.    0.    0.    0.    0.    0.375]
+sum 0.75  dual value -1.75
+=== block 5 ===
+A 2.5  p [4.4 3.8]  q [4. 3.]  bridge 0.894427
+=== block 6 ===
+machine 4: alpha in [2.500, 2.500]  essential
+machine 5: alpha in [0.000, 2.000]  optional
+machine 7: alpha in [0.500, 1.500]  essential
+machine 9: alpha in [0.000, 1.000]  optional
+=== block 7 ===
+start [0. 0.]  alpha 4, 5, 7, 9: [2.5   0.833 1.083 0.583]
+start [1. 1.]  alpha 4, 5, 7, 9: [2.5   0.833 1.083 0.583]
+start [0. 1.]  alpha 4, 5, 7, 9: [2.5   0.611 1.194 0.694]
+=== block 8 ===
+idle case: w [0. 2.]  b -7.0
+point 1: alpha in [2.000, 2.000]  essential
+point 2: alpha in [2.000, 2.000]  essential
+point 3: alpha in [0.000, 0.000]  idle
+=== block 9 ===
+nine, without 4: w [0.4 0.8]  width 2.236
+nine, without 5: w [1. 2.]  width 0.894
+nine, without 7: w [0. 2.]  width 1.0
+nine, without 9: w [1. 2.]  width 0.894
+=== block 10 ===
+features 1000  largest change in G 0.0
+alpha [0.  0.  0.  2.5 2.  0.  0.5 0. ]
+variables: primal 1001  dual 8
+score of a new machine 2.0  from w 2.0

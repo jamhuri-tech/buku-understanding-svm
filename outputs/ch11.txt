@@ -1,0 +1,77 @@
+=== block 1 ===
+c    0      0.00    0.00    0.00    1.00   length 4
+c  0.5      0.12    0.75    1.50    1.00   length 10
+c    1      1.00    3.00    3.00    1.00   length 10
+c    2      8.00   12.00    6.00    1.00   length 10
+c   10   1000.00  300.00   30.00    1.00   length 10
+=== block 2 ===
+c   0  train 0.800  sv 34
+c   1  train 1.000  sv 8
+c 100  train 1.000  sv 5
+=== block 3 ===
+ raw d  2  max K  5.6e+03  K22  9.0e+00  seen rank 6
+ raw d  4  max K  3.2e+07  K22  8.1e+01  seen rank 8
+ raw d  8  max K  1.0e+15  K22  6.6e+03  seen rank 8
+ raw d 12  max K  3.2e+22  K22  5.3e+05  seen rank 7
+ raw d 16  max K  1.0e+30  K22  4.3e+07  seen rank 7
+tens d  2  max K  3.0e+00  K22  1.0e+00  seen rank 6
+tens d  4  max K  9.2e+00  K22  1.1e+00  seen rank 8
+tens d  8  max K  8.4e+01  K22  1.2e+00  seen rank 8
+tens d 12  max K  7.7e+02  K22  1.3e+00  seen rank 8
+tens d 16  max K  7.1e+03  K22  1.4e+00  seen rank 8
+=== block 4 ===
+sv [4, 5]  iterations 1  least margin 1.0
+largest alpha 1.9e-18  least diagonal 5.3e+05
+=== block 5 ===
+exact 0.6065
+terms  1  0.0821
+terms  2  0.2463
+terms  3  0.4104
+terms  5  0.5746
+terms  8  0.6059
+terms 12  0.6065
+=== block 6 ===
+gamma  0.1  sv 8  train 9/9  width 0.130
+gamma    1  sv 9  train 9/9  width 0.604
+gamma   10  sv 9  train 9/9  width 0.671
+=== block 7 ===
+a 32/17  b -15/17  width 0.729
+f(0.5) 0.3048  f(1.5) -1.6985  f(3) -0.9927
+SVC alpha [1.882 3.765 1.882]  b -0.8824
+exact      [1.882 3.765 1.882]  b -0.8824
+=== block 8 ===
+gaussian 0.5191  b 0.5191
+cubic 1446.5
+=== block 9 ===
+gamma  0.01  C=1: sv 8, 7/8  C=1000: sv 3, 8/8  eig 0.0000
+gamma   0.1  C=1: sv 8, 7/8  C=1000: sv 4, 8/8  eig 0.0039
+gamma   0.3  C=1: sv 8, 8/8  C=1000: sv 6, 8/8  eig 0.0669
+gamma     1  C=1: sv 8, 8/8  C=1000: sv 8, 8/8  eig 0.4809
+gamma    10  C=1: sv 8, 8/8  C=1000: sv 8, 8/8  eig 0.9999
+=== block 10 ===
+gamma    0.1  beta [2.458 2.047 0.51 ]  b 0.519  sum -12.493
+gamma   0.01  beta [2.5 2.  0.5]  b 0.976  sum -11.025
+gamma  0.001  beta [2.5 2.  0.5]  b 0.998  sum -11.002
+gamma 0.0001  beta [2.499 2.    0.5  ]  b 1.000  sum -10.998
+=== block 11 ===
+alpha [1. 1. 1. 1. 1. 1. 1. 1.]  b 0.0
+=== block 12 ===
+gamma  0.001  sv 59  train 0.767  test 0.707
+gamma    0.1  sv 10  train 1.000  test 1.000
+gamma      1  sv 21  train 1.000  test 1.000
+gamma     10  sv 47  train 1.000  test 1.000
+gamma   1000  sv 60  train 1.000  test 0.556
+=== block 13 ===
+gamma  0.001  C    1  sv 120  train 0.625  test 0.562
+gamma   0.01  C 1000  sv  33  train 0.925  test 0.923
+gamma    0.1  C   10  sv  36  train 0.942  test 0.921
+gamma      1  C    1  sv  48  train 0.942  test 0.899
+gamma      1  C 1000  sv  30  train 0.983  test 0.827
+gamma    100  C    1  sv 118  train 1.000  test 0.842
+gamma   1000  C 1000  sv 120  train 1.000  test 0.527
+=== block 14 ===
+gamma  0.1  laplace 0.872  gaussian 0.921
+gamma    1  laplace 0.898  gaussian 0.908
+gamma   10  laplace 0.872  gaussian 0.870
+=== block 15 ===
+gamma 1 0.649  scale 0.735  standardised 0.911

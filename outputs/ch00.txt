@@ -1,0 +1,4 @@
+=== block 1 ===
+two largest eigenvalues: [232.005   9.995]
+rank of G: 2
+y'Gy = 200.0  |X'y|^2 = 200.0

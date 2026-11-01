@@ -1,0 +1,52 @@
+=== block 1 ===
+nine machines, feasible: False
+dual: status 0  sum alpha 2.36
+alpha [0.5  0.   0.18 0.5  0.5  0.   0.18 0.   0.5 ]
+=== block 2 ===
+eight, C = 1 : a5, a7, b = 4/5 1/5 -19/5
+eight, C = 2 : a5, a7, b = 8/5 2/5 -43/5
+eight, C = 5/2 : a5, a7, b = 2 1/2 -11
+=== block 3 ===
+exact: a3, a7, b = 9/50 9/50 -29/10
+w [0.4 0.5]  b -2.9
+xi [0.3 0.  0.  1.2 0.3 0.  0.  0.  2.1]
+kinds C0fCC0f0C  P 2.155  D 2.155  breach 0.0
+SVC: w [0.4 0.5]  b [-2.9]
+=== block 4 ===
+tie: kinds C0CCCCC0  w [0.3 0.2]  b in [-1.900, -1.500]
+SVC offset [-1.7]
+=== block 5 ===
+C   0.05  w 0.300 0.200  width 5.547  xi 3.400  wrong 1  C0CCCCC0
+C   0.10  w 0.400 0.400  width 3.536  xi 2.000  wrong 1  C0fCCCf0
+C   0.20  w 0.500 0.500  width 2.828  xi 1.500  wrong 1  C00CCff0
+C   0.50  w 0.450 0.650  width 2.530  xi 1.350  wrong 1  f00CC0f0
+C   1.00  w 0.400 0.800  width 2.236  xi 1.200  wrong 1  000Cf0f0
+C   2.00  w 0.800 1.600  width 1.118  xi 0.400  wrong 0  000Cf0f0
+C   2.50  w 1.000 2.000  width 0.894  xi 0.000  wrong 0  000Cf0f0
+C  10.00  w 1.000 2.000  width 0.894  xi 0.000  wrong 0  000ff0f0
+C 100.00  w 1.000 2.000  width 0.894  xi 0.000  wrong 0  000ff0f0
+=== block 6 ===
+C   0.05  w 0.307 0.233  width 5.192  xi 4.688  wrong 2  CfCCCCf0C
+C   0.10  w 0.286 0.286  width 4.950  xi 4.571  wrong 2  CfCCCff0C
+C   0.20  w 0.400 0.400  width 3.536  xi 4.000  wrong 2  C0fCCff0C
+C   0.50  w 0.400 0.500  width 3.123  xi 3.900  wrong 2  C0fCC0f0C
+C   1.00  w 0.400 0.800  width 2.236  xi 3.600  wrong 2  f0fCf0f0C
+C   2.00  w 0.400 0.800  width 2.236  xi 3.600  wrong 2  f0fCf0f0C
+C   2.50  w 0.400 0.800  width 2.236  xi 3.600  wrong 2  f0fCf0f0C
+C  10.00  w 0.400 0.800  width 2.236  xi 3.600  wrong 2  f0fCf0f0C
+C 100.00  w 0.400 0.800  width 2.236  xi 3.600  wrong 2  f0fCf0f0C
+=== block 7 ===
+scaled: 10 w [0.4 0.5]  b -2.9
+=== block 8 ===
+least total slack: 3.6
+C = 1: balance -0.0  w [0.4 0.8]  breach 0.0
+C = 10: balance 0.0  w [0.4 0.8]  breach 0.0
+=== block 9 ===
+t 0.60  w 0.400 0.800  b -3.800  width 2.236  xi9 0.240  a9 1.000
+t 0.90  w 0.400 0.800  b -3.800  width 2.236  xi9 0.960  a9 1.000
+t 1.00  w 0.400 0.800  b -3.800  width 2.236  xi9 1.200  a9 1.000
+t 1.10  w 0.400 0.800  b -3.800  width 2.236  xi9 1.440  a9 1.000
+t 1.50  w 0.400 0.800  b -3.800  width 2.236  xi9 2.400  a9 1.000
+=== block 10 ===
+cap 0.4237  s 1.180  p [3.458 3.   ]  q [3.119 2.576]
+s (p - q) [0.4 0.5]

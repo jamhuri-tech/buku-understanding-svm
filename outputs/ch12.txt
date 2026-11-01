@@ -1,0 +1,39 @@
+=== block 1 ===
+m     1000  Q needs 0.008 GB
+m    50000  Q needs 20 GB
+m  1000000  Q needs 8000 GB
+=== block 2 ===
+second order
+i 5 j 4 gap     2 eta  1 free     2 t     2
+i 7 j 4 gap     2 eta  4 free   1/2 t   1/2
+alpha ['0', '0', '0', '5/2', '2', '0', '1/2', '0']
+offsets ['-11']
+=== block 3 ===
+Platt loops: 10 steps, alpha [2.5 2.  0.5] b -11.0
+=== block 4 ===
+three points: [32. 64. 32.] b * 17: -15.0 steps 34
+twin points: [0.25 0.   0.25] b 2.0 steps 1
+clash: [1. 1.] steps 1
+=== block 5 ===
+nine C=1/2    first       5     14  dD 9e-16  db 0e+00
+nine C=1/2    second      3     14  dD 0e+00  db 9e-16
+eight C=1/20  first       3      3  dD 0e+00  db 2e-16
+eight C=1/20  second      3      3  dD 0e+00  db 4e-16
+clouds linear first     619    249  dD 2e-13  db 6e-08
+clouds linear second    948    249  dD 2e-13  db 8e-08
+clouds gauss  first    2157    524  dD 5e-10  db 3e-07
+clouds gauss  second    545    524  dD 1e-10  db 2e-07
+=== block 6 ===
+C     1  first   steps   3487  columns    493  sv 384
+C     1  second  steps    836  columns    489  sv 384
+C     1  platt   steps   6524  columns  13048  sv 384
+C   100  first   steps  60000  columns   1283  sv 415
+C   100  second  steps  28636  columns    713  sv 358
+C   100  platt   steps  60043  columns 120086  sv 297
+=== block 7 ===
+m   250  steps   166  cols   113  sv  103  read 2.8e+04 of 6.2e+04
+m   500  steps   354  cols   223  sv  190  read 1.1e+05 of 2.5e+05
+m  1000  steps   836  cols   515  sv  384  read 5.2e+05 of 1.0e+06
+m  2000  steps  1389  cols  1078  sv  737  read 2.2e+06 of 4.0e+06
+m  4000  steps  3005  cols  2240  sv 1418  read 9.0e+06 of 1.6e+07
+steps grow like m^1.03, entries read like m^2.09

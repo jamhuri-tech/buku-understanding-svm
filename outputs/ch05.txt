@@ -1,0 +1,21 @@
+=== block 1 ===
+alpha [0.  0.  0.  2.5 2.  0.  0.5 0. ]  misfit 0.0
+stationarity    9.8e-15
+balance         4.2e-14
+primal          1.4e-13
+dual            0.0e+00
+complementarity 2.8e-13
+=== block 2 ===
+w [1. 3.]  b -14.0  worst slack 0.0  active [4 7]  misfit 2.26
+w [2. 4.]  b -21.0  worst slack 0.0  active [4]  misfit 4.472
+w [0. 2.]  b -7.0  worst slack -2.0  active [3 4 5]  misfit 0.0
+=== block 3 ===
+{'broken': 60, 'both': 34, 'no solution': 161, 'pass': 1}
+passed: [[4, 5, 7]]
+=== block 4 ===
+this alpha: [0.  0.  0.  2.5 0.  0.  1.5 0.  1. ]
+=== block 5 ===
+machine 4: slope 2.500
+machine 5: slope 2.000
+machine 6: slope 0.000
+machine 7: slope 0.500

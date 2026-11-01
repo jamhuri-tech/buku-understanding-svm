@@ -1,0 +1,64 @@
+=== block 1 ===
+wines 178 features 13 classes [59 71 48]
+train [41 50 33] constant accuracy 0.403
+smallest sd 0.129  proline sd 311.3
+proline share of total variance 0.9981
+corr flavanoids, total phenols 0.864
+corr flavanoids, OD280/OD315 0.791
+=== block 2 ===
+constant         0.403
+raw Gaussian     0.702
+raw linear       0.927
+scaled Gaussian  0.984
+scaled linear    0.959
+=== block 3 ===
+raw d2 53200.9  proline 52900.0  share 0.99434
+std d2 10.554  proline 0.546  share 0.052
+gamma scale 1.680e-06  K raw 0.915  K std 0.444
+=== block 4 ===
+best 0.992 one-SE pick {'svc__C': 10.0, 'svc__gamma': 0.1}
+linear one-SE C 0.01 [0.984 0.984 0.959 0.959 0.959 0.959]
+smaller C: pick 0.01 [0.403 0.403 0.403 0.984]
+=== block 5 ===
+Gaussian ovo    0.976  low 0.960  high 0.984  6 settings
+   C, gamma (1.0, 0.01) chosen 9 of 20
+   C, gamma (1.0, 0.1) chosen 6 of 20
+   C, gamma (10.0, 0.1) chosen 2 of 20
+=== block 6 ===
+Gaussian C 10, gamma 0.1: support vectors 61
+linear: support vectors [25 35 21] total 81 share 0.653
+leave-one-out errors 3 of 124
+at the cap 76
+=== block 7 ===
+0 v 1 width 3.573 b -0.27 ['proline', 'alcohol', 'ash alkalinity']
+0 v 2 width 4.343 b 0.158 ['flavanoids', 'OD280/OD315', 'hue']
+1 v 2 width 4.245 b 0.438 ['colour', 'hue', 'flavanoids']
+w 0 v 2
+[ 0.036 -0.063  0.02  -0.098  0.05   0.154  0.223 -0.11   0.079
+ -0.133  0.182  0.183  0.135]
+z wine a
+[ 0.737  0.296  1.096  1.411  0.496 -1.236 -1.194  0.157 -0.048
+  1.406 -0.938 -1.162  0.029]
+b 0.158  f -0.97  class of wine a 2
+=== block 8 ===
+w phenols, 0 v 2: all 0.154  no flavanoids 0.191
+accuracy without flavanoids 0.976
+=== block 9 ===
+out-of-fold Brier 0.0591  base rate 0.6573
+largest p: median 0.954  least 0.507
+p >= 0.9: kept 85 of 124, right 84  sent back 39
+wrong among sent back 2
+=== block 10 ===
+test wines 54  errors 1  accuracy 0.9815
+macro F1 0.9829
+[[18  0  0]
+ [ 1 20  0]
+ [ 0  0 15]]
+exact 95% for error [0.001 0.099]
+Hoeffding upper limit, delta 0.05 0.1851
+predict and largest p differ on 0
+test Brier 0.0623
+p >= 0.9: kept 39 of 54, right 39  sent back 15
+=== block 11 ===
+error: true 1 said 0 p [0.785 0.21  0.005]
+pair scores 0v1 0v2 1v2 [0.288 1.215 1.132]

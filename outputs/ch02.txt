@@ -1,0 +1,15 @@
+=== block 1 ===
+machines separable: True
+rogue    separable: False
+xor      separable: False
+lifted   separable: True
+=== block 2 ===
+hulls   : 0.894
+street  : 0.894
+=== block 3 ===
+all  [1, 1] x1 + 2.0 x2 = 11.0  width 0.894
+all  [1, 10] x1 + 2.0 x2 = 11.0  width 1.961
+all  [10, 1] x1 + 2.0 x2 = 11.0  width 0.999
+pair [1, 1] x1 + 4.0 x2 = 24.5  width 4.123
+pair [1, 10] x1 + 400.0 x2 = 2004.5  width 40.012
+pair [10, 1] x1 + 0.04 x2 = 4.7  width 10.77
