@@ -8,6 +8,7 @@ that text. Trailing spaces are ignored, and numbers such as 2.8e-17
     python check_outputs.py          # all chapters
     python check_outputs.py 04 05    # selected chapters
 """
+import difflib
 import glob
 import os
 import re
@@ -46,7 +47,12 @@ for path in sorted(glob.glob("outputs/ch[0-9][0-9].txt")):
         else:
             problems += 1
             print(f"Chapter {int(nn)}: block not produced by the code:")
-            print("    " + wanted.replace("\n", "\n    ")[:400])
+            have = clean.splitlines()
+            for line in wanted.splitlines():
+                if line not in have:
+                    near = difflib.get_close_matches(line, have, 1, 0.5)
+                    print(f"    book: {line}")
+                    print(f"    code: {near[0] if near else '(no close line)'}")
     print(f"Chapter {int(nn)}: {matched}/{len(blocks)} blocks match")
 
 print("ALL MATCH" if problems == 0 else f"{problems} problems")
