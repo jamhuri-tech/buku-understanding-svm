@@ -52,6 +52,13 @@ modules from that folder.
 .venv/bin/python check_outputs.py 04 05
 ```
 
+The printed blocks were produced on macOS with the versions in
+`requirements.txt`, and the automatic check runs on the same kind of
+machine. On another CPU, rounding can steer an iterative solver down a
+slightly different path, so step counts, support-vector counts near a
+tolerance, and the last digits of some numbers may differ, while the
+solutions agree within the solver tolerance.
+
 A full run takes several minutes. The first form covers all chapters,
 and the second covers the chapters you name.
 

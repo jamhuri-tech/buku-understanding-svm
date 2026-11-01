@@ -1,5 +1,7 @@
 # Every change reruns the code of each chapter and compares it with the
 # output blocks printed in the book.
+# The runner matches the machine that produced the blocks, because
+# rounding changes the paths of iterative solvers on other CPUs.
 name: check
 
 on:
@@ -9,7 +11,7 @@ on:
 
 jobs:
   check:
-    runs-on: ubuntu-24.04
+    runs-on: macos-15-intel
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
