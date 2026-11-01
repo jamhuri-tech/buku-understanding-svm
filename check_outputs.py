@@ -2,7 +2,7 @@
 
 For each outputs/chNN.txt, every code/chNN_*.py is run and the outputs
 are joined. Each block printed in the book must then appear whole inside
-that text. Trailing spaces, the sign of a printed zero, digits past the
+that text. Repeated spaces, the sign of a printed zero, digits past the
 tenth decimal, and numbers below 1e-9 are ignored, since these are
 rounding noise that depends on the CPU.
 
@@ -21,6 +21,7 @@ def tidy(text):
     """Write rounding noise in one form."""
     text = re.sub(r"\b\d(?:\.\d+)?e-(?:09|[1-9]\d)\b", "<1e-9", text)
     text = re.sub(r"-0\.(?=[\s\]])", "0.", text)
+    text = re.sub(r" +", " ", text)  # NumPy pads to the widest entry
     text = re.sub(r"(\d\.\d{10})\d{3,}", r"\1", text)
     # The diverging solver of Chapter 6 stops at a size set by rounding.
     return re.sub(r"sum alpha \d\.\de\+1\d", "sum alpha <huge>", text)
